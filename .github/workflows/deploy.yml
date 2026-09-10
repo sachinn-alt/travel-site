@@ -32,6 +32,8 @@ jobs:
           npm install
           npm run build
           cp build/index.html build/404.html
+        env:
+          CI: false
 
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v4
