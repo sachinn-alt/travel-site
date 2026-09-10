@@ -1,0 +1,18 @@
+[{
+  "_id": {
+    "$oid": "688740124db2fc8a9b35b730"
+  },
+  "type": "about",
+  "heading": "About Odyssey",
+  "subheading": "Explore the World, One Journey at a Time",
+  "description": "Odyssey is more than just a travel website – it's your companion in discovering new places, people, and possibilities. Whether you're chasing sunsets in Santorini or exploring forts in Rajasthan, we bring handpicked destinations, curated experiences, and seamless planning to your fingertips.",
+  "mission": "To inspire and empower every traveler to explore the world with confidence, joy, and purpose.",
+  "vision": "Becoming the most trusted platform for wanderlust-driven souls across the globe.",
+  "coreValues": [
+    "Authenticity in every journey",
+    "Sustainability at heart",
+    "Adventure with safety",
+    "Memories over miles"
+  ],
+  "teamNote": "We’re a passionate crew of explorers, storytellers, and techies driven by a love for travel and a mission to help others experience the magic of the world. Come, travel the Odyssey way!"
+}]

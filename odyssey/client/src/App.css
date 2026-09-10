@@ -1,0 +1,618 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.feedback-form input,
+.feedback-form textarea {
+  width: 100%;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.feedback-form button {
+  background: #0077cc;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.feedback-list {
+  margin-top: 20px;
+  list-style: none;
+  padding: 0;
+}
+.feedback-list li {
+  background: #f9f9f9;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+/* Reset & Base */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #004466;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+  background-color: #004466;
+  color: white;
+  text-align: center;
+  padding: 15px 10px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Home Page */
+.home-container {
+  padding: 40px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.hero {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 12px;
+  margin-bottom: 40px;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(70%);
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  font-size: 1.3rem;
+}
+
+.highlights {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.highlight-card {
+  background: #f9fafb;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  width: 150px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.highlight-card:hover {
+  transform: scale(1.05);
+}
+
+.icon {
+  font-size: 2rem;
+}
+
+.featured-tours h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #1f2937;
+}
+
+.tours-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.tour-card {
+  width: 250px;
+  text-decoration: none;
+  color: #111;
+  transition: transform 0.3s ease;
+}
+
+.tour-card:hover {
+  transform: translateY(-5px);
+}
+
+.tour-card img {
+  width: 100%;
+  border-radius: 10px;
+  height: 180px;
+  object-fit: cover;
+}
+
+.tour-name {
+  margin-top: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* About Page */
+/* About Page Styles */
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  background: #f0f4f8;
+  min-height: 100vh;
+}
+
+.about-heading {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.about-subheading {
+  font-size: 1.5rem;
+  color: #555;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.about-description {
+  max-width: 800px;
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 40px;
+}
+
+/* Cards */
+.about-card {
+  background: white;
+  padding: 30px;
+  margin: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 800px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.about-card h3 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  color: #1e3a8a;
+}
+
+.about-card p,
+.about-card li {
+  font-size: 1rem;
+  color: #333;
+}
+
+.about-card ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.about-card li {
+  list-style: disc;
+  margin-bottom: 6px;
+}
+
+/* Loading */
+.loading {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #999;
+  margin-top: 50px;
+}
+
+
+/* Contact Page */
+/* General Contact Page Layout */
+.contact-section {
+  padding: 40px 20px;
+  background-color: #f8faff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Section Titles */
+.contact-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #004a99;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Contact Office Cards */
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 50px;
+}
+
+.contact-card {
+  background-color: #ffffff;
+  border-left: 5px solid #0077cc;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  transition: transform 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+}
+
+.contact-office {
+  font-size: 1.3rem;
+  color: #0077cc;
+  margin-bottom: 10px;
+}
+
+.contact-address,
+.contact-email,
+.contact-website {
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 8px;
+}
+
+/* Feedback Form */
+.feedback-form {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 600px;
+  margin-bottom: 40px;
+}
+
+.feedback-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.feedback-form input:focus,
+.feedback-form textarea:focus {
+  outline: none;
+  border-color: #0077cc;
+}
+
+.feedback-form button {
+  padding: 12px;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.feedback-form button:hover {
+  background-color: #005fa3;
+}
+
+/* Feedback Display Section */
+.feedback-display {
+  width: 90%;
+  max-width: 700px;
+  background-color: #e9f3ff;
+  padding: 30px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+
+.feedback-display h3 {
+  text-align: center;
+  color: #004a99;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.feedback-card {
+  background-color: #ffffff;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  border-left: 4px solid #0077cc;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.feedback-card p {
+  margin: 5px 0;
+  font-size: 0.95rem;
+}
+
+/* Gallery Page */
+.gallery-container {
+  padding: 30px;
+}
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+.gallery-item {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.gallery-item img {
+  width: 100%;
+  height: auto;
+}
+.gallery-item-title {
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Category Page */
+.category-page {
+  padding: 2rem;
+  background-color: #f9fafb;
+}
+
+.category-heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #1e3a8a;
+}
+
+.subcategory-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 1.5rem 0 1rem 0;
+  color: #1f2937;
+}
+
+.tours-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.tour-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.tour-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+.tour-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.tour-info {
+  padding: 1rem;
+}
+
+.tour-place {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+
+.tour-description {
+  font-size: 0.95rem;
+  color: #4b5563;
+  margin-bottom: 0.75rem;
+}
+
+.tour-tags {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tag {
+  font-size: 0.85rem;
+  background-color: #e5e7eb;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
+.duration {
+  color: #0f172a;
+}
+
+.price {
+  color: #047857;
+  font-weight: 600;
+}
+
+.hero-banner {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(70%);
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-shadow: 0px 2px 10px rgba(0,0,0,0.7);
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+
+/* Booking Page */
+/* Booking Form Section */
+.booking-form {
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #f4f9ff, #e0f0ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+
+.booking-form form {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 30px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.booking-form input {
+  padding: 12px;
+  margin-bottom: 18px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border 0.3s ease;
+}
+
+.booking-form input:focus {
+  border-color: #0077cc;
+  outline: none;
+}
+
+.booking-form button {
+  padding: 12px;
+  background-color: #007f5f;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.booking-form button:hover {
+  background-color: #005f46;
+}
+
+
