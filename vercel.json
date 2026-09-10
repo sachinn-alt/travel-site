@@ -1,7 +1,4 @@
 {
-  "buildCommand": "cd odyssey/client && npm run build",
-  "outputDirectory": "odyssey/client/build",
-  "installCommand": "cd odyssey/client && npm install",
   "rewrites": [
     {
       "source": "/(.*)",

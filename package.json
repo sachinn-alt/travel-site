@@ -7,8 +7,8 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "build": "cd odyssey/client && npm install && npm run build",
-    "start": "cd odyssey/client && npm start",
+    "build": "npm run build --prefix odyssey/client",
+    "start": "npm start --prefix odyssey/client",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
